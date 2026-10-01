@@ -1,0 +1,29 @@
+{
+  "experiment_name": "nmmr_oracle_syn_dim_2",
+  "data": {
+    "train_path": "data/synthetic_pcl_u/dimension/2/train.npz",
+    "test_path": "data/synthetic_pcl_u/dimension/2/test.npz",
+    "n_repeat": 10,
+    "dim_u": 2,
+    "dim_z": 4,
+    "dim_w": 4,
+    "dim_x": 4,
+    "validation_fraction": 0.3,
+    "split_seed": 2026
+  },
+  "model": {
+    "n_epochs": 3000,
+    "learning_rate": 0.003,
+    "l2_penalty": 3e-06,
+    "loss_name": "V_statistic",
+    "kernel_length_scale": 1.0,
+    "network_depth": 3,
+    "network_width": 80,
+    "validation_interval": 25
+  },
+  "runtime": {
+    "seed": 1,
+    "num_threads": 8,
+    "device": "auto"
+  }
+}
